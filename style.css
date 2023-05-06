@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B283A;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    position: relative;
+    width: 550px;
+    height: 550px;
+}
+
+/* PICKER SECTION */
+
+.picker {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+}
+
+.picker > input, 
+.custom-select, 
+.picker > button {
+    height: 40px;
+}
+
+.picker > input {
+    width: 60px;
+    border: none;
+}
+
+.custom-select {
+    width: 310px;
+    display: flex;
+    position: relative;
+}
+
+.custom-select > select,
+ .picker > button {
+    border: 1px solid #D1D5DB;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.custom-select > select {
+    width: 100%;
+    padding: 0 15px;
+    font-size: 16px;
+    appearance: none;
+    outline: none;
+}
+
+.custom-select > img {
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.picker > button {
+    width: 120px;
+    background-color: white;
+    font-size: 12px;
+}
+
+/* SCHEME SECTION */
+
+.scheme,
+.color-code {
+    display: flex;
+}
+
+.scheme {
+    height: 505px;
+    background-color: white;
+}
+
+.color0,
+.color1,
+.color2,
+.color3,
+.color4,
+.color-code > p {
+    width: 110px;
+}
+
+/* COLOR CODE SECTION */
+
+.color-code {
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background-color: white;
+}
+
+.color-code > p {
+    font-size: 12px;
+    cursor: pointer;
+}

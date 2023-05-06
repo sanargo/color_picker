@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Color picker</title>
+</head>
+<body>
+
+    <main>
+
+        <section class="picker">
+            <input type="color" id="color-picker">
+            <div class="custom-select">
+                <select name="" id="scheme-options">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+                <img src="./images/angle-down-6_7Wh-bSoHf6.png" alt="down arrow">
+            </div>
+            <button id="create-scheme">Get color scheme</button>
+        </section>
+        
+        <section class="scheme">
+            <div class="color0" id="color0"></div>
+            <div class="color1" id="color1"></div>
+            <div class="color2" id="color2"></div>
+            <div class="color3" id="color3"></div>
+            <div class="color4" id="color4"></div>
+        </section>
+    
+        <section class="color-code" id="color-code">
+            
+        </section>
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
